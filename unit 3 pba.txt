@@ -1,0 +1,7 @@
+# Open the source file and destination file using a context manager
+with open("source.txt", "r") as file1:
+    with open("destination.txt", "w") as file2:
+        content = file1.read()
+        file2.write(content)
+
+print("Contents copied successfully!")
